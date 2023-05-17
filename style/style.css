@@ -5,7 +5,7 @@ select {
   main {
     width: 100%;
     margin: auto;
-    padding-left: 400px;
+    padding-left: 200px;
     background-image: url(../images/bag.png);
     background-repeat: no-repeat;
     height: 450px;
@@ -33,18 +33,18 @@ select {
   }
   
   input:focus, select:focus {
-    background: #5216d4;
+    /* background: #5216d4; */
   }
   
-  .success {
+  /* .success {
      border: 1px solid green;
      background-color: #E3F0DD;
-  }
+  } */
   
-  .error {
+  /* .error {
     border: 1px solid red;
     background-color: #F0E1DD;
-  }
+  } */
   
   button[type="submit"] {
       display: inline-block;
@@ -84,6 +84,7 @@ button[type="submit"]:hover {
     border: 1px solid #CCC;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.5); 
     color: black;
+    width: 700px;
   }
 
   .form_group {
@@ -96,7 +97,7 @@ button[type="submit"]:hover {
   }
  
   footer{
-    background-color: #540ce4;
+    background-color: #06030a;
     height: 80px;
     color: white;
     text-align: center;
@@ -104,17 +105,18 @@ button[type="submit"]:hover {
   }
   main div:hover{
     zoom: 1.5;
+    
   }
   input:hover{
-    background-color: #5d98b0;
+    background-color: #86d2f0;
+    zoom: 1.5;
+    clear: none;
   }
   label:hover{
-    color: #0d0224;
+    color: #4111b1;
     font-weight: 700;
   }
-  .image img{
-    border-radius: 50% 50%;
-  }
+  
   h1, h3{
     color: black;
   }

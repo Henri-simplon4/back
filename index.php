@@ -16,15 +16,15 @@
       <img src="images/logo.png" alt="">
       </div>
       <div class="col col-md-6 col-sm-6 pt-5">
-        <h1>universite Josehp ky-zerbo</h1>
-        <h3>Section UFR/SDS</h3>
+        <h1>Université Joseph KI-ZERBO</h1>
+        <h3>UFR/SDS</h3>
       </div>
     </div>
   </header>
-<main>
+<main class="pt-5">
   <form method="post" action="script/script.php">
     <fieldset>
-      <legend>Inscription</legend>
+      <legend>Formulaire d'Inscription</legend>
       <div class="form_group">
         <label for="subscription_name">Nom</label>
         <input type="text" name="nom" id="subscription_name" required />
