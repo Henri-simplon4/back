@@ -23,7 +23,8 @@ if(isset($_POST['submit'])){
         $stmt->execute();
 
         echo '<h2>informations enregistre avec succès.</h2>';
-        echo '<p><a href="../index.php">retour</a>'; 
+        echo '<p><a href="../index.php">retour</a>';
+        echo '<p><a href="../script/liste.php">liste</a>'; 
         
 }
 ?>

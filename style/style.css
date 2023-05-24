@@ -1,17 +1,17 @@
 select {
     background: blue;
   }
-  
-  main {
+  body{
     width: 100%;
-    margin: auto;
-    padding-left: 200px;
+  }
+  
+  .main {
     background-image: url(../images/bag.png);
     background-repeat: no-repeat;
     height: 450px;
   }
   label {
-    width: 200px;
+    width: 100px;
     display: block;
     float: left;
   }
@@ -31,20 +31,6 @@ select {
       box-shadow: inset 5px 5px 5px  rgba(0,0,0,.075);
     width: 350px;
   }
-  
-  input:focus, select:focus {
-    /* background: #5216d4; */
-  }
-  
-  /* .success {
-     border: 1px solid green;
-     background-color: #E3F0DD;
-  } */
-  
-  /* .error {
-    border: 1px solid red;
-    background-color: #F0E1DD;
-  } */
   
   button[type="submit"] {
       display: inline-block;
@@ -84,11 +70,12 @@ button[type="submit"]:hover {
     border: 1px solid #CCC;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.5); 
     color: black;
-    width: 700px;
+    width: 600px !important;
   }
 
   .form_group {
     padding: 5px;
+    color: rgb(247, 73, 9);
   }
   .form_group::after {
     content: "";
@@ -102,21 +89,36 @@ button[type="submit"]:hover {
     color: white;
     text-align: center;
     padding-top: 30px;
-  }
-  main div:hover{
-    zoom: 1.5;
-    
+    width: 100%;
   }
   input:hover{
     background-color: #86d2f0;
-    zoom: 1.5;
     clear: none;
   }
   label:hover{
     color: #4111b1;
     font-weight: 700;
   }
-  
+   
   h1, h3{
     color: black;
   }
+  tr:hover{
+    zoom: 1.5;
+  }
+  @media screen and (min-width: 400px) and (max-width: 900px){
+    fieldset {
+      border-radius: 10px;
+      border: 1px solid #CCC;
+      box-shadow: 5px 5px 5px rgba(0,0,0, 0.5); 
+      color: black;
+      width: auto;
+      text-align: center;
+      width: 100% !important;
+    }
+    input{
+      width: 100%;
+    }   
+  }
+
+ 
