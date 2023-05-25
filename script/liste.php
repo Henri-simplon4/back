@@ -51,6 +51,9 @@
     }
     echo "</table>";
 ?>
+<br>
+<button class="retour"><a href="../index.php"> Retour</a></button>
+<br><br>
 <footer>
     <div class="row">
         <div class="col">

@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>script</title>
+</head>
+<body>
+    <h1 class="feli">Félicitation!!!</h1>
+</body>
+</html>
 <?php
 // formulaire soumis
 if(isset($_POST['submit'])){
@@ -22,9 +35,9 @@ if(isset($_POST['submit'])){
         $stmt->bindParam(':tuteur', $tuteur);
         $stmt->execute();
 
-        echo '<h2>informations enregistre avec succès.</h2>';
-        echo '<p class="retour"><a href="../index.php">retour accueil</a>';
-        echo '<p class="liste"><a href="../script/liste.php">liste</a>'; 
+        echo '<h2 class="info"> Vos informations ont été bien enregistré avec succès.</h2>';
+        echo '<button class="retour"><a href="../index.php">Retour accueil</a></button>';
+        echo '<button class="liste"><a href="../script/liste.php">Liste</a></button>'; 
         
 }
 ?>
