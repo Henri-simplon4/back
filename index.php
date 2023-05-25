@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <title>Application UFR/SDS</title>
 </head>
-<body class="container-fluid">
+<body class="container">
   <header>
     <div class="row">
-      <div class=" col-md-4 col-sm-4 image">
-      <img src="images/logo.png" alt="">
+      <div class=" offset-md-1 col-md-2 col-sm-4 pt-2 image">
+      <a href="script/liste.php"><img src="images/logo.png" alt="" width=100px heigth=100px></a>
       </div>
-      <div class="col-md-6 offset-sm-2 col-sm-6 pt-5">
+      <div class="offset-md-3 col-md-6 offset-sm-2 col-sm-6 pt-3">
         <h1>Université Joseph KI-ZERBO</h1>
         <h3>UFR/SDS</h3>
       </div>
@@ -55,15 +55,30 @@
         <label for="subscription_tuteur">Tuteur</label>
         <input type="text"  name="tuteur" id="subscription_tuteur" required />
       </div>
-      <button type="submit" name="submit">Enregistrer</button>
+      <div class="row">
+        <div class="col">
+        <button type="submit" name="submit">Enregistrer</button>
+        </div>
+        <div class="col">
+        <button class="lis"><a href="script/liste.php">liste</a></button>
+        </div>
+      </div>
     </fieldset>
-    <a href="script/liste.php"><h2>voir la liste</h2></a>
     </div>
   </form>
   </div>
 </div>
-<footer>
-<p>Copyrigth.co    Email: josehpkyzerbo@gmail.com    Ouagadougou, Burkina Faso</p>
+<footer class="container">
+<div class="row">
+        <div class="col">
+          <p>Copyright.co</p>  
+        </div>
+        <div class="col">
+          <p>Email: josehpkyzerbo@gmail.com</p>  
+        </div>
+        <div class="col">
+          <p>Ouagadougou, Burkina Faso</p>  
+        </div>
 </footer>
 <script src="script/script.js"></script>
 </body>

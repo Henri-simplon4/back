@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Document</title>
+    <title>Listes</title>
 </head>
 <body class="container">
+<header>
+    <div class="row">
+      <div class=" offset-md-1 col-md-2 col-sm-4 pt-2 image">
+      <a href="../index.php"><img src="../images/logo.png" alt="" width=100px heigth=100px></a>
+      </div>
+      <div class="offset-md-3 col-md-6 offset-sm-2 col-sm-6 pt-3">
+        <h1>Université Joseph KI-ZERBO</h1>
+        <h3>UFR/SDS</h3>
+      </div>
+    </div>
+  </header>
 <?php
     // Connexion à la base de données
     include('connexion.php');
@@ -19,7 +30,7 @@
     $stmt = $conn->query($sql);
 
     // Traitement des résultats
-    echo "<table class='table table-hover'>";
+    echo "<table class='table'>";
     echo "<tr class='bg-secondary text-white'>
     <th scope='col' class=''>Nom</th>
     <th scope='col'>Prenom</th>
@@ -29,7 +40,7 @@
     <th scope='col'>Tuteur</th>
     </tr>";
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo "<tr>";
+        echo "<tr class='trr'>";
         echo "<td>" . htmlspecialchars($row['nom']) . "</td>";
         echo "<td>" . htmlspecialchars($row['prenom']) . "</td>";
         echo "<td>" . htmlspecialchars($row['date_de_naissance']) . "</td>";
@@ -41,7 +52,17 @@
     echo "</table>";
 ?>
 <footer>
-<p>Copyrigth.co    Email: josehpkyzerbo@gmail.com    Ouagadougou, Burkina Faso</p>
+    <div class="row">
+        <div class="col">
+          <p>Copyright.co</p>  
+        </div>
+        <div class="col">
+          <p>Email: josehpkyzerbo@gmail.com</p>  
+        </div>
+        <div class="col">
+          <p>Ouagadougou, Burkina Faso</p>  
+        </div>
+    </div>
 </footer>
 </body>
 </html>
